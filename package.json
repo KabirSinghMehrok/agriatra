@@ -2,7 +2,10 @@
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   },
-  "scripts":{
-    "dev":"npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.8"
   }
 }
