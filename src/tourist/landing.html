@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link  href="/src/styles/output.css" rel="stylesheet"/>
-  <title>Tailwind Starter</title>
+  <title>Agriãtra</title>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <script>
@@ -29,12 +28,127 @@
       })
     })
   </script>
+  <link  href="../styles/output.css" rel="stylesheet"/>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 </head>
 <body>
+  <header aria-label="Site Header" class="bg-white fixed top-0 left-0 right-0 z-10 shadow-lg">
+    <div
+      class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+    >
+      <img 
+        src="../assets/logo.png"
+        class="h-6"
+      />
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Site Nav" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                About
+              </a>
+            </li>
   
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Explore
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Packages
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Manage
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-green-700"
+              href="/"
+            >
+              Login
+            </a>
+  
+            <a
+              class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-green-600 transition hover:text-green-600/75 sm:block"
+              href="/"
+            >
+              Register
+            </a>
+          </div>
+  
+          <button
+            id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+          >
+            <span class="sr-only">Toggle menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Manage
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> 
+
   <!-- Hero section -->
   <section
-    class="relative bg-[url(https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80)] bg-cover bg-center bg-no-repeat"
+    class="mt-16 sm:mt-12 relative bg-[url(https://images.unsplash.com/photo-1528693404014-b13ebe6e723e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80)] bg-cover bg-center bg-no-repeat"
   >
     <div
       class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"
@@ -53,8 +167,7 @@
       </h1>
 
       <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
-        tenetur fuga ducimus numquam ea!
+        Escape the city and immerse yourself in this peaceful Agriãtra with us.
       </p>
 
       <div class="mt-8 flex flex-wrap gap-4 text-center">
@@ -84,8 +197,8 @@
             class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full"
           >
             <img
-              alt="Party"
-              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+              alt="Indian Village"
+              src="../assets/about.jpeg"
               class="absolute inset-0 h-full w-full object-cover"
             />
           </div>
@@ -94,9 +207,14 @@
             <h2 class="text-3xl font-bold sm:text-4xl">About us</h2>
     
             <p class="mt-4 text-gray-600">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-              atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-              veniam tempora deserunt? Molestiae eius quidem quam repellat.
+              Agriãtra specializes in providing an unique and immersive agritravel experiences. 
+              We offer a variety of agritourism activities for visitors of all ages, 
+              including guided tours of our organic gardens, farm-to-table cooking classes, 
+              and educational workshops on sustainable agriculture practices.
+            </p>
+            <p class="mt-4 text-gray-600">
+              Whether you're seeking a peaceful getaway or just a a foodie looking to learn about sustainable agriculture, 
+              Agriãtra has something for everyone. Contact us today to book your agritourism package and start planning your perfect getaway.
             </p>
     
             <a
@@ -133,7 +251,7 @@
           <h2 class="text-3xl font-bold sm:text-4xl text-center">Featured tours</h2>
     
           <p class="max-w-md mt-4 text-gray-500 text-center mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Enjoy authentic and down to earth experiences at one of our featured tour spots. 
           </p>
         </header>
     
@@ -143,18 +261,29 @@
             <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
               <img
                 alt="Home"
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://i.pinimg.com/originals/e4/b5/91/e4b591eb2f89e20f74887868afd3607e.jpg"
                 class="h-56 w-full rounded-md object-cover"
               />
             
               <div class="mt-2">
                 <p class="text-lg font-semibold">Chandgarh Farms</p>
-                <p class="text-sm text-gray-500">₹1,500 per night</p>
+                <p class="text-sm text-gray-500">Dibugarh, Uttar Pradesh</p>
                 <p class="mt-4 text-sm text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                  atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                  veniam tempora deserunt? Molestiae eius quidem quam repellat.
-                </p> 
+                  Chandgarh Farms is a beautiful location located in Dibugarh, Uttar Pradesh. 
+                  The farm is surrounded by lush green fields and forests, providing a peaceful and serene environment for visitors to enjoy.
+                </p>
+                <div
+                  class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+                >
+                  Find out more
+            
+                  <span
+                    aria-hidden="true"
+                    class="block transition group-hover:translate-x-0.5"
+                  >
+                    &rarr;
+                  </span>
+                </div> 
               </div>
             </a>
           </li>
@@ -163,18 +292,29 @@
             <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
               <img
                 alt="Home"
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://tricitypropertysearches.com/wp-content/uploads/2021/09/Bengali-Village-Homes-Design-10.jpg"
                 class="h-56 w-full rounded-md object-cover"
               />
             
               <div class="mt-2">
-                <p class="text-lg font-semibold">Chandgarh Farms</p>
-                <p class="text-sm text-gray-500">₹1,500 per night</p>
+                <p class="text-lg font-semibold">Samaypore Khetal</p>
+                <p class="text-sm text-gray-500">Borishal, West Bengal, India</p>
                 <p class="mt-4 text-sm text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                  atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                  veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                  Samaypore Khetal is a farm located in Borishal, West Bengal. 
+                  The farm is situated in a beautiful rural setting, surrounded by lush green fields and orchards.
                 </p> 
+                <div
+                  class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+                >
+                  Find out more
+            
+                  <span
+                    aria-hidden="true"
+                    class="block transition group-hover:translate-x-0.5"
+                  >
+                    &rarr;
+                  </span>
+                </div>
               </div>
             </a>
           </li>
@@ -183,18 +323,30 @@
             <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
               <img
                 alt="Home"
-                src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                src="https://en-media.thebetterindia.com/uploads/2019/02/thannal.jpg"
                 class="h-56 w-full rounded-md object-cover"
               />
             
               <div class="mt-2">
-                <p class="text-lg font-semibold">Chandgarh Farms</p>
-                <p class="text-sm text-gray-500">₹1,500 per night</p>
+                <p class="text-lg font-semibold">Sumedhu</p>
+                <p class="text-sm text-gray-500">Tiruvannamalai, Tamil Nadu, India</p>
                 <p class="mt-4 text-sm text-gray-600">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic
-                  atque tenetur quis eius quos ea neque sunt, accusantium soluta minus
-                  veniam tempora deserunt? Molestiae eius quidem quam repellat.
+                  Sumedhu is a farm located in Tiruvannamalai, Tamil Nadu. The farm is situated in a beautiful rural setting, surrounded by lush green fields and forests.
+                  One of the main features of Sumedhu is the earth made huts that are found there. 
+                  These huts are sculpted beautifully, with intricate designs and patterns carved into the earthen walls.
                 </p> 
+                <div
+                  class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+                >
+                  Find out more
+            
+                  <span
+                    aria-hidden="true"
+                    class="block transition group-hover:translate-x-0.5"
+                  >
+                    &rarr;
+                  </span>
+                </div>
               </div>
             </a>
           </li>
@@ -210,9 +362,8 @@
           <h2 class="text-3xl font-bold sm:text-4xl">Book in easy steps</h2>
     
           <p class="mt-4 text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
-            aliquam doloribus nesciunt eos fugiat. Vitae aperiam fugit consequuntur
-            saepe laborum.
+            Agriãtra makes your dream tours to nature farms a hassle free experience 
+            in just 3 simple steps
           </p>
         </div>
     
@@ -222,11 +373,11 @@
           >
             <h1 class="text-3xl font-bold">1</h1>
     
-            <h2 class="mt-4 text-xl font-bold">Do something</h2>
+            <h2 class="mt-4 text-xl font-bold">Explore</h2>
     
             <p class="mt-1 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+              Browse the website and explore different categories and destination 
+              and package that interests you.
             </p>
           </div>
 
@@ -235,11 +386,10 @@
           >
             <h1 class="text-3xl font-bold">2</h1>
     
-            <h2 class="mt-4 text-xl font-bold">Do something more</h2>
+            <h2 class="mt-4 text-xl font-bold">Select</h2>
     
             <p class="mt-1 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+              Find a package that fits your need and timings, modify the package to your liking
             </p>
           </div>
 
@@ -248,11 +398,11 @@
           >
             <h1 class="text-3xl font-bold">3</h1>
     
-            <h2 class="mt-4 text-xl font-bold">Do something else</h2>
+            <h2 class="mt-4 text-xl font-bold">Book</h2>
     
             <p class="mt-1 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ut quo
-              possimus adipisci distinctio alias voluptatum blanditiis laudantium.
+              Now just book, we will take care of providing you an end to end,
+              curated experience to your liking!
             </p>
           </div>
         </div>
@@ -267,7 +417,8 @@
           <h2 class="text-3xl font-bold sm:text-4xl text-center">Explore different farming methods</h2>
     
           <p class="max-w-md mt-4 text-gray-500 text-center mx-auto">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Learn about various techniques and use this as an educating and enriching
+            experience of a lifetime!
           </p>
         </header>
     
@@ -276,12 +427,12 @@
           <li>
             <a
               href="#"
-              class="relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80)] bg-cover bg-center bg-no-repeat"
+              class="relative block overflow-hidden rounded-xl bg-[url(https://i.imgur.com/LI5Stau.png)] bg-cover bg-center bg-no-repeat"
             >
               <div class="relative bg-black bg-opacity-40 p-8 pt-40 text-white">
-                <h3 class="text-2xl font-bold">Bee keeping</h3>
+                <h3 class="text-2xl font-bold">Fish farming</h3>
 
-                <p class="text-sm">Apiculture</p>
+                <p class="text-sm">Aqua culture</p>
               </div>
             </a>
           </li>
@@ -289,7 +440,7 @@
           <li>
             <a
               href="#"
-              class="relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80)] bg-cover bg-center bg-no-repeat"
+              class="relative block overflow-hidden rounded-xl bg-[url(../assets/bee_keeping.jpg)] bg-cover bg-center bg-no-repeat"
             >
               <div class="relative bg-black bg-opacity-40 p-8 pt-40 text-white">
                 <h3 class="text-2xl font-bold">Bee keeping</h3>
@@ -302,12 +453,12 @@
           <li>
             <a
               href="#"
-              class="relative block overflow-hidden rounded-xl bg-[url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1592&q=80)] bg-cover bg-center bg-no-repeat"
+              class="relative block overflow-hidden rounded-xl bg-[url(photo-1598209438468-86226d89de1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80)] bg-cover bg-center bg-no-repeat"
             >
               <div class="relative bg-black bg-opacity-40 p-8 pt-40 text-white">
-                <h3 class="text-2xl font-bold">Bee keeping</h3>
+                <h3 class="text-2xl font-bold">Flower farming</h3>
 
-                <p class="text-sm">Apiculture</p>
+                <p class="text-sm">Floriculture</p>
               </div>
             </a>
           </li>
@@ -329,69 +480,11 @@
             <div class="swiper-slide">
               <blockquote class="rounded-lg bg-gray-100 p-8">
                 <div class="flex items-center">
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-green-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-1 text-lg font-medium text-gray-700">Paul Starr</p>
-                  </div>
-                
+                  <p class="mt-1 text-lg font-medium text-gray-700">Jainendra Chakroborty, Delhi</p>
                 </div>
 
                 <p class="mt-4 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                  voluptatem alias ut provident sapiente repellendus.
+                  My family and I recently took an agritour to Kerala and it was an absolutely amazing experience! 
                 </p>
               </blockquote>
             </div>
@@ -399,69 +492,11 @@
             <div class="swiper-slide">
               <blockquote class="rounded-lg bg-gray-100 p-8">
                 <div class="flex items-center">
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-green-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-1 text-lg font-medium text-gray-700">Paul Starr</p>
-                  </div>
-                
+                  <p class="mt-1 text-lg font-medium text-gray-700">Rohan Patel, Ahemadabad</p>
                 </div>
 
                 <p class="mt-4 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                  voluptatem alias ut provident sapiente repellendus.
+                  The scenery was breathtaking, with lush green tea and spice plantations as far as the eye could see.
                 </p>
               </blockquote>
             </div>
@@ -469,73 +504,14 @@
             <div class="swiper-slide">
               <blockquote class="rounded-lg bg-gray-100 p-8">
                 <div class="flex items-center">
-
-                  <div>
-                    <div class="flex justify-center gap-0.5 text-green-500">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-4 w-4"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                      >
-                        <path
-                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                        />
-                      </svg>
-                    </div>
-
-                    <p class="mt-1 text-lg font-medium text-gray-700">Paul Starr</p>
-                  </div>
-                
+                  <p class="mt-1 text-lg font-medium text-gray-700">Devanshi Shah, Banglore</p>
                 </div>
 
                 <p class="mt-4 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                  voluptatem alias ut provident sapiente repellendus.
+                  Our local host, who owned the farm we stayed on, was incredibly welcoming and treated us like family.
                 </p>
               </blockquote>
             </div>
-
           </div>
         </div>
       </div>
@@ -548,11 +524,17 @@
       >
         <div class="lg:flex lg:items-end lg:justify-between">
           <div>
+            <div class="flex justify-center text-teal-600 lg:justify-start">
+              <img 
+                src="../assets/logo.png"
+                class="h-9"
+              />
+            </div>
+    
             <p
               class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
             >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
-              consequuntur amet culpa cum itaque neque.
+              Escape the city and immerse yourself in this peaceful Agriãtra with us.
             </p>
           </div>
     
@@ -562,25 +544,25 @@
             >
               <li>
                 <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-                  Link 1
+                  About
                 </a>
               </li>
     
               <li>
                 <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-                  Link 2
+                  Explore
                 </a>
               </li>
     
               <li>
                 <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-                  Link 3
+                  Packages
                 </a>
               </li>
     
               <li>
                 <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
-                  Link 4
+                  Blog
                 </a>
               </li>
             </ul>
@@ -592,7 +574,6 @@
         </p>
       </div>
     </footer>
-    
-
+  
   </body>
 </html>
