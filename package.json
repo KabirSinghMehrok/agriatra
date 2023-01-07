@@ -6,6 +6,7 @@
     "dev": "npx tailwindcss -i ./src/styles/tailwind.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.8"
+    "@tailwindcss/typography": "^0.5.8",
+    "flowbite": "^1.6.0"
   }
 }
