@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+</head>
+<body>
+  <header aria-label="Site Header" class="bg-white fixed top-0 left-0 right-0 z-10 shadow-lg">
+    <div
+      class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+    >
+      <img 
+        src="{% static 'assets/logo.png' %}"
+        class="h-6"
+      />
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Site Nav" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                About
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Explore
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Packages
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Manage
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-green-700"
+              href="/"
+            >
+              Login
+            </a>
+  
+            <a
+              class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-green-600 transition hover:text-green-600/75 sm:block"
+              href="/"
+            >
+              Register
+            </a>
+          </div>
+  
+          <button
+            id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+          >
+            <span class="sr-only">Toggle menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Manage
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header> 
+
+  <section aria-label="Page Header" class="bg-gray-100 mt-16 sm:mt-12">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:px-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <div class="flex justify-between sm:gap-x-4">
+          <img
+            alt="Man"
+            src="{% static 'assets/kishan_sinha.jpg' %}"
+            class="h-14 w-14 rounded-full object-cover"
+          />
+          <div class="text-left">
+            <h1 class="text-2xl font-bold text-gray-900 sm:text-3xl">
+              Kishan Sinha
+            </h1>
+            
+            <p class="mt-1.5 text-sm text-gray-500">
+              Host at Chandgarh farms
+            </p>
+          </div>
+        </div>
+        <div class="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+          <button
+            class="inline-flex items-center justify-center rounded-lg border border-gray-400 px-5 py-3 text-gray-500 transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+            type="button"
+          >
+            <span class="text-sm font-medium"> Change profile settings </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Booking management  -->
+  <section>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header>
+        <h2 class="text-3xl font-bold sm:text-4xl text-center">Manage bookings</h2>
+      </header>
+  
+      <!-- List of bookings -->
+      <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <div href="#" class="block rounded-lg p-4 shadow-sm shadow-green-100 transition hover:shadow-lg border-slate-200 border">
+            <div class="mt-2">
+              <p class="text-lg font-semibold mb-2">Order No: 100390878</p>
+              <p><span class="font-medium underline mr-2">Phone:</span> 9699883177</p>
+              <p><span class="font-medium underline mr-2">Member:</span> 5</p>
+              <p><span class="font-medium underline mr-2">Arrive on:</span> 15/02/2023</p>
+              <p><span class="font-medium underline mr-2">Stay time:</span> 1 days</p> 
+              <!-- Success -->
+              <div
+                class="inline-flex items-center justify-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-yellow-700 mt-3 mb-5"
+              >
+                <p class="whitespace-nowrap text-sm">Status: In progress</p>
+              </div>
+
+            </div>
+            <a
+              class="inline-block rounded border border-green-600 bg-green-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-green-600 focus:outline-none focus:ring active:text-green-500"
+              href="#"
+            >
+              Manage this booking
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div href="#" class="block rounded-lg p-4 shadow-sm shadow-green-100 transition hover:shadow-lg border-slate-200 border">
+            <div class="mt-2">
+              <p class="text-lg font-semibold mb-2">Order No: 177390878</p>
+              <p><span class="font-medium underline mr-2">Phone:</span> 9295488887</p>
+              <p><span class="font-medium underline mr-2">Member:</span> 3</p>
+              <p><span class="font-medium underline mr-2">Arrive on:</span> 18/02/2023</p>
+              <p><span class="font-medium underline mr-2">Stay time:</span> 2 days</p> 
+              <!-- Success -->
+              <div
+                class="inline-flex items-center justify-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-yellow-700 mt-3 mb-5"
+              >
+                <p class="whitespace-nowrap text-sm">Status: In progress</p>
+              </div>
+
+            </div>
+            <a
+              class="inline-block rounded border border-green-600 bg-green-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-green-600 focus:outline-none focus:ring active:text-green-500"
+              href="#"
+            >
+              Manage this booking
+            </a>
+          </div>
+        </li>
+
+        <li>
+          <div href="#" class="block rounded-lg p-4 shadow-sm shadow-green-100 transition hover:shadow-lg border-slate-200 border">
+            <div class="mt-2">
+              <p class="text-lg font-semibold mb-2">Order No: 100390421</p>
+              <p><span class="font-medium underline mr-2">Phone:</span> 9259889871</p>
+              <p><span class="font-medium underline mr-2">Member:</span> 2</p>
+              <p><span class="font-medium underline mr-2">Arrive on:</span> 22/12/2022</p>
+              <p><span class="font-medium underline mr-2">Stay time:</span> 1 days</p> 
+              <!-- Success -->
+              <div
+                class="inline-flex items-center justify-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-emerald-700 mt-3 mb-5"
+              >
+                <p class="whitespace-nowrap text-sm">Status: Completed</p>
+              </div>
+
+            </div>
+          </div>
+        </li>
+        
+        <li>
+          <div href="#" class="block rounded-lg p-4 shadow-sm shadow-green-100 transition hover:shadow-lg border-slate-200 border">
+            <div class="mt-2">
+              <p class="text-lg font-semibold mb-2">Order No: 100390491</p>
+              <p><span class="font-medium underline mr-2">Phone:</span> 9699858870</p>
+              <p><span class="font-medium underline mr-2">Member:</span> 4</p>
+              <p><span class="font-medium underline mr-2">Arrive on:</span> 18/09/2022</p>
+              <p><span class="font-medium underline mr-2">Stay time:</span> 3 days</p> 
+              <!-- Success -->
+              <div
+                class="inline-flex items-center justify-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-emerald-700 mt-3 mb-5"
+              >
+                <p class="whitespace-nowrap text-sm">Status: Completed</p>
+              </div>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header>
+        <h2 class="text-3xl font-bold sm:text-4xl text-center">Manage packages</h2>
+      </header>
+  
+      <!-- List of featured tours -->
+      <ul class="grid gap-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
+        <li>
+          <div class="block rounded-lg p-4 shadow-sm shadow-green-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="https://i.pinimg.com/originals/e4/b5/91/e4b591eb2f89e20f74887868afd3607e.jpg"
+              class="h-56 w-full rounded-md object-cover"
+            />
+          
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Chandgarh Farms</p>
+              <p class="text-sm text-gray-500">Dibugarh, Uttar Pradesh</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Chandgarh Farms is a beautiful location located in Dibugarh, Uttar Pradesh. 
+                The farm is surrounded by lush green fields and forests, providing a peaceful and 
+                serene environment for visitors to enjoy.
+              </p> 
+            </div>
+            <a
+              class="inline-block mt-5 rounded border border-green-600 bg-green-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-green-600 focus:outline-none focus:ring active:text-green-500"
+              href="#"
+            >
+              Edit package
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer aria-label="Site Footer" class="bg-gray-100 mt-10 sm:mt-16">
+    <div
+      class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+    >
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <div class="flex justify-center text-teal-600 lg:justify-start">
+            <img 
+              src="{% static 'assets/logo.png' %}"
+              class="h-9"
+            />
+          </div>
+  
+          <p
+            class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
+          >
+            Escape the city and immerse yourself in this peaceful Agriãtra with us.
+          </p>
+        </div>
+  
+        <nav aria-label="Footer Nav" class="mt-12 lg:mt-0">
+          <ul
+            class="flex flex-wrap justify-center gap-6 md:gap-8 lg:justify-end lg:gap-12"
+          >
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                About
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Explore
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Packages
+              </a>
+            </li>
+  
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+        Copyright &copy; 2022. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
