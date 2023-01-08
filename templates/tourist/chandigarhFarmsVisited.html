@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandgarh Farms</title>
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+</head>
+<body>
+  <header aria-label="Site Header" class="bg-white fixed top-0 left-0 right-0 z-10 shadow-lg">
+    <div
+      class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+    >
+      <img
+        src="{% static 'assets/logo.png' %}"
+        class="h-6"
+      />
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Site Nav" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Explore
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Packages
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Manage
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-green-700"
+              href="/"
+            >
+              Login
+            </a>
+
+            <a
+              class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-green-600 transition hover:text-green-600/75 sm:block"
+              href="/"
+            >
+              Register
+            </a>
+          </div>
+
+          <button
+            id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+          >
+            <span class="sr-only">Toggle menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Manage
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Package info section -->
+
+  <section class="mt-16 sm:mt-12 mb-16">
+    <div class="relative mx-auto max-w-screen-xl px-4 py-8">
+      <div>
+        <h1 class="text-2xl font-bold lg:text-3xl">Chandgarh Farms</h1>
+        <span class="mt-1 text-sm text-gray-500">Dibugarh, Uttar Pradesh, India</span>
+      </div>
+
+      <div class="grid gap-8 lg:grid-cols-4 lg:items-start">
+        <div class="lg:col-span-3">
+          <div class="relative mt-4">
+            <img
+              alt="Tee"
+              src="https://i.pinimg.com/originals/e4/b5/91/e4b591eb2f89e20f74887868afd3607e.jpg"
+              class="h-72 w-full rounded-xl object-cover lg:h-[540px]"
+            />
+          </div>
+        </div>
+
+        <div class="lg:sticky lg:top-0">
+          <div class="space-y-4 lg:pt-8">
+            <div>
+              <p class="text-lg font-bold">Farming methods</p>
+              <div class="flex gap-2 mt-2">
+                <span
+                  class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-700 border-black"
+                >
+                  Orchards (Pomology)
+                </span>
+                <span
+                  class="whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-700 border-green-800"
+                >
+                  Bee farming (Apiculture)
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <p class="text-lg font-bold">Located at</p>
+              <div>
+                Ramgarh Tehsil, Dibugarh Block, Uttar Pradesh, India
+              </div>
+            </div>
+
+            <div class="flex gap-x-2 items-center">
+              <p class="">Starting at</p>
+              <p class="text-xl font-bold">₹3,999</p>
+            </div>
+            <a href = "/rebookTour">
+            <button
+              type="button"
+              class="w-full rounded bg-green-700 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
+            >
+              Book tour again
+            </button></a>
+            <a href = "/viewTouristNFT">
+            <button
+              type="button"
+              class="w-full rounded border border-4-green border-green-700 px-6 py-3 text-sm font-bold uppercase tracking-wide text-green-700"
+            >
+              View NFT
+            </button></a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3">
+          <div
+            class="prose max-w-none [&>iframe]:mt-6 [&>iframe]:aspect-video [&>iframe]:w-full [&>iframe]:rounded-xl"
+          >
+            <p>
+              Chandgarh Farms is a beautiful location located in Dibugarh, Uttar Pradesh.
+              The farm is surrounded by lush green fields and forests,
+              providing a peaceful and serene environment for visitors to enjoy.
+            </p>
+
+            <p>
+              One of the main attractions of Chandgarh Farms is the beautiful mango orchards that are found there.
+              The orchards are filled with a variety of mango trees,
+              producing a delicious and juicy fruit that is loved by people all over the world.
+              The orchards are carefully tended to by skilled farmers,
+              ensuring that the mangoes are of the highest quality.
+            </p>
+            <p>
+              In addition to the mango orchards, Chandgarh Farms also offers a variety
+               of activities for visitors to enjoy. These include nature walks,
+                bird watching, and picnics in the beautiful surroundings.
+            </p>
+            <p>
+              Overall, Chandgarh Farms is a fantastic place to visit for anyone
+              looking to escape the hustle and bustle of city life and enjoy
+              the natural beauty of Uttar Pradesh. The beautiful mango orchards
+              and peaceful setting make it a perfect destination for a relaxing and enjoyable day out.
+            </p>
+
+            <h2>Highlights</h2>
+            <ul>
+              <li>Mango Orchards</li>
+              <li>Traditional house from 19th century</li>
+              <li>Lush green fields of rice and wheat nearby</li>
+              <li>Easily accessible by bus/train via Dibugarh city</li>
+            </ul>
+          </div>
+
+          <div class="mt-10">
+            <blockquote class="rounded-lg bg-gray-100 p-8">
+              <div class="flex items-center">
+                <img
+                  alt="Man"
+                  src="{% static 'assets/kishan_sinha.jpg' %}"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+
+                <div class="ml-4">
+                  <p class="mt-1 text-lg font-medium text-gray-700">Kishan Sinha</p>
+                </div>
+              </div>
+
+              <p class="mt-4 text-gray-500">
+                Kishan Sinha is the host at Chandgarh Farms, a beautiful location located in Dibugarh, Uttar Pradesh.
+                He is knowledgeable about the local area and is always happy to share his insights with guests.
+                Whether you are interested in learning about sustainable agriculture
+                or just want to relax in the peaceful surroundings of the farm, Kishan is the perfect host to make your visit a memorable one.
+              </p>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer aria-label="Site Footer" class="bg-gray-100 mt-10 sm:mt-16">
+    <div
+      class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+    >
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <div class="flex justify-center text-teal-600 lg:justify-start">
+            <img
+              src="{% static 'assets/logo.png' %}"
+              class="h-9"
+            />
+          </div>
+
+          <p
+            class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
+          >
+            Escape the city and immerse yourself in this peaceful Agriãtra with us.
+          </p>
+        </div>
+
+        <nav aria-label="Footer Nav" class="mt-12 lg:mt-0">
+          <ul
+            class="flex flex-wrap justify-center gap-6 md:gap-8 lg:justify-end lg:gap-12"
+          >
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Explore
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Packages
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+        Copyright &copy; 2022. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
