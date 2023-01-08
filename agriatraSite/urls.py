@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from agriatraSiteApp import views as mainViews
 from host import views as hostViews
 from guide import views as guideViews
@@ -40,4 +40,5 @@ urlpatterns = [
     path('manageHostAccommodations/', hostViews.manageAccommodations),
     path('login/', mainViews.login),
     path('register/', mainViews.register),
+    path('accounts/', include('allauth.urls')),
 ]

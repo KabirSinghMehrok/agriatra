@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Bee Keeping</title>
+  <link  href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+</head>
+<body>
+  <header aria-label="Site Header" class="bg-white fixed top-0 left-0 right-0 z-10 shadow-lg">
+    <div
+      class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8"
+    >
+      <img
+        src="{% static 'assets/logo.png' %}"
+        class="h-6"
+      />
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Site Nav" class="hidden md:block">
+          <ul class="flex items-center gap-6 text-sm">
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Explore
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Packages
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Manage
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="block rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-green-700"
+              href="/"
+            >
+              Login
+            </a>
+
+            <a
+              class="hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-green-600 transition hover:text-green-600/75 sm:block"
+              href="/"
+            >
+              Register
+            </a>
+          </div>
+
+          <button
+            id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+            class="block rounded bg-gray-100 p-2.5 text-gray-600 transition hover:text-gray-600/75 md:hidden"
+          >
+            <span class="sr-only">Toggle menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+          <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Explore
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Packages
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Manage
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                  Blog
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Explore section -->
+
+  <section class="mt-16 sm:mt-12">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
+      <header>
+        <h2 class="text-3xl font-bold text-gray-900 sm:text-5xl">
+          Explore Bee Keeping (Apiculture)
+        </h2>
+
+        <p class="max-w-md mt-4 text-gray-500">
+          Learn about the practice of keeping bees for the production of honey
+          and other products. Discover the benefits of beekeeping for the
+          environment and the importance of bees in pollinating plants
+        </p>
+      </header>
+
+      <div class="flex items-center justify-between mt-8">
+        <div class="flex border border-gray-100 divide-x divide-gray-100 rounded">
+          <button
+            class="inline-flex items-center justify-center w-10 h-10 text-gray-600 transition hover:bg-gray-50 hover:text-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+              />
+            </svg>
+          </button>
+
+          <button
+            class="inline-flex items-center justify-center w-10 h-10 text-gray-600 transition hover:bg-gray-50 hover:text-gray-700"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-5 h-5"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div>
+          <label for="SortBy" class="sr-only">SortBy</label>
+
+          <select id="SortBy" class="h-10 text-sm border-gray-300 rounded">
+            <option>Sort By</option>
+            <option value="Title, DESC">Title, DESC</option>
+            <option value="Title, ASC">Title, ASC</option>
+            <option value="Price, DESC">Price, DESC</option>
+            <option value="Price, ASC">Price, ASC</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- List of packages -->
+
+      <ul class="grid gap-4 mt-4 sm:grid-cols-2 lg:grid-cols-4">
+        <li>
+          <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="https://i.pinimg.com/originals/e4/b5/91/e4b591eb2f89e20f74887868afd3607e.jpg"
+              class="h-56 w-full rounded-md object-cover"
+            />
+
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Chandgarh Farms</p>
+              <p class="text-sm text-gray-500">Dibugarh, Uttar Pradesh</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Chandgarh Farms is a beautiful location located in Dibugarh, Uttar Pradesh.
+                The farm is surrounded by lush green fields and forests, providing a peaceful and
+                serene environment for visitors to enjoy.
+              </p>
+            </div>
+            <div
+              class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+            >
+              Find out more
+
+              <span
+                aria-hidden="true"
+                class="block transition group-hover:translate-x-0.5"
+              >
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="{% static 'assets/bhavani.jpg' %}"
+              class="h-56 w-full rounded-md object-cover"
+            />
+
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Bhavani Farms</p>
+              <p class="text-sm text-gray-500">Coimbatore, Tamil Nadu</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Bhavani Farms is a sustainable farm that produces a variety of crops
+                using eco-friendly practices. The farm is known for its high-quality
+                rice and vegetables, which are sold locally and throughout the region.
+              </p>
+            </div>
+            <div
+              class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+            >
+              Find out more
+
+              <span
+                aria-hidden="true"
+                class="block transition group-hover:translate-x-0.5"
+              >
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="{% static 'assets/brahmaputra.jpg' %}"
+              class="h-56 w-full rounded-md object-cover"
+            />
+
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Brahmaputra Farms</p>
+              <p class="text-sm text-gray-500">Guwahati, Assam</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Brahmaputra Farms is a family-run farm that is known for its delicious
+                and juicy mangoes. The farm is also home to a variety of livestock,
+                including cows, goats, and chickens, which are treated with the
+                utmost care and kindness.
+              </p>
+            </div>
+            <div
+              class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+            >
+              Find out more
+
+              <span
+                aria-hidden="true"
+                class="block transition group-hover:translate-x-0.5"
+              >
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="{% static 'assets/ganges.jpg' %}"
+              class="h-56 w-full rounded-md object-cover"
+            />
+
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Ganges Farms</p>
+              <p class="text-sm text-gray-500">Varanasi, Uttar Pradesh</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Ganges Farms is a beautiful farm that is surrounded by lush green
+                fields and forests. The farm is known for its high-quality rice,
+                wheat, and vegetables, which are grown using sustainable and
+                eco-friendly practices.
+              </p>
+            </div>
+            <div
+              class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+            >
+              Find out more
+
+              <span
+                aria-hidden="true"
+                class="block transition group-hover:translate-x-0.5"
+              >
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="block rounded-lg p-4 shadow-sm shadow-indigo-100 transition hover:shadow-lg">
+            <img
+              alt="Home"
+              src="{% static 'assets/godavari.jpg' %}"
+              class="h-56 w-full rounded-md object-cover"
+            />
+
+            <div class="mt-2">
+              <p class="text-lg font-semibold">Godavari Farms</p>
+              <p class="text-sm text-gray-500">Nashik, Maharashtra</p>
+              <p class="mt-4 text-sm text-gray-600">
+                Godavari Farms is a beautiful farm that is surrounded by lush green fields
+                and forests. The farm is known for its high-quality rice, wheat, and vegetables,
+                 which are grown using sustainable and eco-friendly practices.
+              </p>
+            </div>
+            <div
+              class="group mt-6 mb-5 inline-flex items-center gap-1 text-sm font-medium text-blue-600"
+            >
+              Find out more
+
+              <span
+                aria-hidden="true"
+                class="block transition group-hover:translate-x-0.5"
+              >
+                &rarr;
+              </span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer aria-label="Site Footer" class="bg-gray-100 mt-10 sm:mt-16">
+    <div
+      class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
+    >
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <div class="flex justify-center text-teal-600 lg:justify-start">
+            <img
+              src="{% static 'assets/logo.png' %}"
+              class="h-9"
+            />
+          </div>
+
+          <p
+            class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left"
+          >
+            Escape the city and immerse yourself in this peaceful Agriãtra with us.
+          </p>
+        </div>
+
+        <nav aria-label="Footer Nav" class="mt-12 lg:mt-0">
+          <ul
+            class="flex flex-wrap justify-center gap-6 md:gap-8 lg:justify-end lg:gap-12"
+          >
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Explore
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Packages
+              </a>
+            </li>
+
+            <li>
+              <a class="text-gray-700 transition hover:text-gray-700/75" href="/">
+                Blog
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <p class="mt-12 text-center text-sm text-gray-500 lg:text-right">
+        Copyright &copy; 2022. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
