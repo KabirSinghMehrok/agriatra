@@ -38,4 +38,6 @@ urlpatterns = [
     path('farms/visited/chandigarhVisited', touristViews.chandigarhFarmsVisited),
     path('viewHostProfile/', hostViews.viewProfile),
     path('manageHostAccommodations/', hostViews.manageAccommodations),
+    path('login/', mainViews.login),
+    path('register/', mainViews.register),
 ]
